@@ -134,6 +134,10 @@ button {
     display: flex;
     gap: 30px;
     margin-top: 45px;
+    align-items: center;
+}
+
+.hero-btn-item {
 }
 
 .hero-text {
@@ -153,24 +157,104 @@ button {
 }
 
 .get-started {
-    border: 1px solid #bcd0e5;
-    background-color: transparent;
+    border: none;
+    background-color: #02897a;
     font-weight: 700;
     text-align: center;
-    color: #173a56;
+    color: #fff;
     border-radius: 4px;
     width: 178px;
     height: 53px;
 }
 
-.get-started:hover,
+/* .get-started:hover,
 .get-started:focus {
     color: #fff;
     background-color: #02897a;
     border: none;
+} */
+
+.video-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #02897a;
+    border: none;
+    padding-left: 32px;
+    min-width: 20px;
+    min-height: 20px;
+    position: relative;
+}
+
+.video-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../image/play.svg");
+    background-size: contain;
+    background-repeat: no-repeat
 }
 
 /* PRODUCT */
+
+.product-item-title::before {
+    content: "";
+    display: block;
+    border-radius: 19px;
+    width: 54px;
+    height: 54px;
+    background-color: #4d8dff;
+    margin-bottom: 26px;
+}
+
+.product-item:nth-child(1) .product-item-title::before {
+    background-color: #02897a;
+    background-image: url(../image/cursor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.product-item:nth-child(2) .product-item-title::before {
+    background-color: #4d8dff;
+    background-image: url(../image/wave.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-item:nth-child(3) .product-item-title::before {
+    background-color: #740a76;
+    background-image: url(../image/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-item:nth-child(4) .product-item-title::before {
+    background-color: #f03e3d;
+    background-image: url(../image/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-box {
+    border-radius: 19px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.prosuct-icon {
+    fill: #fff;
+}
 
 .product {
     padding-bottom: 50px;
@@ -191,7 +275,6 @@ button {
 .product-list {
     flex-direction: row;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 50px;
@@ -218,7 +301,6 @@ button {
 .product-item {
     flex-direction: column;
     width: calc((100% - 90px) / 4);
-    
 }
 
 .product-btn {
@@ -234,6 +316,8 @@ button {
     margin-right: auto;
     margin-left: auto;
 }
+
+
 
 /* SERVICES */
 
@@ -312,8 +396,40 @@ button {
 
 .support-item-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+}
+
+.support-item-text::before {
+    content: "";
+    display: block;
+    border: 2.92px solid #fff;
+    border-radius: 14px;
+    min-width: 35px;
+    min-height: 35px;
+    background-color: #f03e3d;
+    margin-right: 30px;
+}
+
+.support-item:nth-child(1) .support-item-text::before {
+    background-image: url(../image/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f90;
+}
+
+.support-item:nth-child(2) .support-item-text::before {
+    background-image: url(../image/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f03e3d;
+}
+
+.support-item:nth-child(3) .support-item-text::before {
+    background-image: url(../image/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4d8dff;
 }
 
 .collaborative-list {
@@ -332,4 +448,396 @@ button {
 
 .services-item-subtitle {
     font-weight: 600;
+}
+
+/* FOOTER */
+
+/* .footer-container {
+    display: flex;
+}
+
+.footer-logo {
+    margin-right: 146px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.93;
+    color: #173a56;
+    max-width: 178px;
+}
+
+.footer-brand-name {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 93%;
+    color: #173a56;
+}
+
+.footer-heading {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #22343d;
+}
+
+.socials-footer-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 28px;
+    margin-left: 10px;
+}
+
+.social-icons {
+    fill: #02897a;
+    color: #02897a;
+}
+
+.resource {
+    margin-right: 129px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 118px;
+    min-height: 205px;
+}
+
+.resource-list ,
+.stuff-list {
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.resource-list .resource-item,
+.stuff-list .stuff-item {
+    flex: 1 1 0;
+}
+
+.resource-list .resource-item a,
+.stuff-list .stuff-item a {
+    display: block;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+
+.stuff {
+    margin-right: 83px;
+    display: block;
+}
+
+.footer-nav {
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 219%;
+    color: #22343d;
+    display: flex;
+    justify-self: start;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #22343d;
+}
+
+.subscribe-heading {
+    margin-bottom: 30px;
+    max-width: 280px;
+}
+
+
+.footer-form {
+    display: block;
+    position: relative;
+}
+
+.input-row-phone {
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    width: 325px;
+    height: 48px;
+    color: #02897a;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+    outline: transparent;
+}
+
+.btn-subscribe {
+    border-radius: 4px;
+    min-width: 131px;
+    height: 39px;
+    border: none;
+    background-color: #02897a;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.input-with-icon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 25px
+}
+
+.input-with-icon input  {
+    padding: 10px 42px;
+    box-sizing: border-box;
+}
+
+.phone-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #02897a;
+}
+
+.input-row-phone::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #02897a;
+} */
+
+/* Footer layout */
+.footer {
+    background: #fff;
+    color: #22343d;
+    padding: 48px 0 24px;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Columns */
+.footer-logo-container,
+.resource,
+.stuff,
+.subscribe {
+    flex: 1 1 0;
+    min-width: 180px;
+    box-sizing: border-box;
+}
+
+/* Brand */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #173a56;
+    max-width: 178px;
+    margin: 0 0 28px 0;
+}
+
+.footer-brand-name {
+    font-weight: 700;
+    font-size: 30px;
+    color: #173a56;
+}
+
+/* Socials */
+.socials-footer-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 28px;
+}
+
+.social-icons {
+    color: #02897a;
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: color 180ms ease, stroke 180ms ease, transform 160ms ease;
+}
+
+.social-footer-item:hover .social-box,
+.social-footer-item:focus-within .social-box {
+    background-color: #02897a;
+    transform: translateY(-2px);
+}
+
+.social-footer-item:hover .social-icons,
+.social-footer-item:focus-within .social-icons {
+    color: #ffffff;
+    stroke: #ffffff;
+}
+
+.social-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: transparent;
+    box-sizing: border-box;
+    transition: background-color 180ms ease, transform 160ms ease;
+}
+
+/* Headings and links */
+.footer-heading {
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #22343d;
+}
+
+.footer-link {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 219%;
+    color: #22343d;
+    text-decoration: none;
+}
+
+/* Lists */
+.resource-list,
+.stuff-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Subscribe column */
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-heading {
+    margin: 0 0 30px 0;
+    max-width: 280px;
+    color: #22343d;
+}
+
+/* Form and input with icon */
+.footer-form {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.input-with-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 325px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.input-with-icon input,
+.input-row-phone {
+    width: 325px;
+    height: 48px;
+    padding: 10px 12px 10px 44px;
+    /* space for icon */
+    border: 1px solid #bcd0e5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #02897a;
+    font-size: 16px;
+    line-height: 175%;
+    outline: none;
+    background: transparent;
+}
+
+
+.input-with-icon .phone-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 16px;
+    height: 24px;
+    fill: #02897a;
+}
+
+/* Placeholder */
+.input-with-icon input::placeholder,
+.input-row-phone::placeholder {
+    color: #02897a;
+    opacity: 1;
+}
+
+/* Button */
+.btn-subscribe {
+    border-radius: 4px;
+    min-width: 131px;
+    height: 39px;
+    border: none;
+    background-color: #02897a;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    padding: 0 14px;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo-container,
+    .resource,
+    .stuff,
+    .subscribe {
+        min-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .input-with-icon {
+        width: 100%;
+        max-width: none;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .btn-subscribe {
+        width: 100%;
+    }
 }
