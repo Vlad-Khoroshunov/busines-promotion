@@ -1287,6 +1287,7 @@ button {
 
 .enterprice {
     background: linear-gradient(180deg, #f6f6f6 0%, rgba(246, 246, 246, 0) 100%);
+    margin-bottom: 294px;
 }
 
 .enterprice-container {
@@ -1327,3 +1328,121 @@ button {
     background-color: #02897a;
     margin-bottom: 51px;
 }
+
+/* Usecases */
+
+.usecases {}
+
+.usecases-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {}
+
+.usecases-title {
+    font-weight: 700;
+    font-size: 34px;
+    padding-bottom: 56px;
+}
+
+.usecases-filling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.usecases-img {}
+
+.usecases-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.usecases-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.usecases-item-upper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.usecases-item-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.usecases-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.usecases-svg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: #f4f5f7;
+}
+
+/* Question */
+.question {}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {}
+
+.question-title {
+    
+}
+
+.question-text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.question-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.question-item {}
+
+.q-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.question-toggle {
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.question-answer {}
+
+.answer-text {}
+
