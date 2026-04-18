@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
@@ -37,11 +38,26 @@
                 <li class="header-btn-item"><button class="header-btn" type="button">Sing in</button></li>
                 <li class="header-btn-item"><button class="header-btn" type="button">Sing up</button></li>
             </ul>
-            <button class="burger-btn button" type="button" data-menu-open>
+            <button class="burger-btn button" type="button">
                 <svg class="burger-icon" width="24" height="24">
                     <use href="./image/burger-menu.svg"></use>
                 </svg>
             </button>
+            <nav class="mobile-menu">
+                <button class="close-btn" type="button">✕</button>
+            
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item"><a class="menu-item-link current" href="./index.html">Product</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./customers.html">Customers</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./pricing.html">Pricing</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./resources.html">Resources</a></li>
+                </ul>
+
+                <ul class="mobile-btn-list">
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing in</button></li>
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing up</button></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -131,7 +147,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item-img"><img src="./image/management-img.svg" alt="management-img" width="349" heigh="306"></div>
+                            <div class="item-img"><img src="./image/management-img.svg" class="management-img" alt="management-img" width="349" heigh="306"></div>
                         </div>
                     </li>
                     <li class="services-item">
@@ -153,7 +169,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item-img"><img src="./image/support-img.svg" alt="support-img" width="349" height="306"></div>
+                            <div class="item-img"><img src="./image/support-img.svg" class="management-img" alt="support-img" width="349" height="306"></div>
                         </div>
                     </li>
                     <li class="services-item">
@@ -174,13 +190,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="item-img"><img src="./image/collaboration-img.svg" alt="collaboration-img" width="349" height="306"></div>
+                            <div class="item-img"><img src="./image/collaboration-img.svg" class="management-img" alt="collaboration-img" width="349" height="306"></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="process hidden">
+        <section class="process">
             <div class="process-container container">
                 <div class="process-text-box">
                     <h2 class="process-title">Quick & Easy Process</h2>
@@ -209,7 +225,7 @@
                 <button class="process-btn" type="button">Contact our expert</button>
             </div>
         </section>
-        <section class="strategies hidden">
+        <section class="strategies">
             <div class="strategies-container container">
                 <div class="strategies-title-box">
                     <h2 class="strategies-title">Contents Strategies</h2>
@@ -252,7 +268,7 @@
                 </ul>
             </div>
         </section>
-        <section class="price hidden">
+        <section class="price">
             <div class="container price-container">
                 <h2 class="price-title">Price Table</h2>
                 <p class="price-text">We offer competitive price</p>
@@ -281,7 +297,7 @@
                             <p class="money money-green">5</p>
                             <div class="per-month-right">
                                 <span class="currency currency-green">$</span>
-                                <p class="period">Per / month</p>
+                                <p class="period period-green">Per / month</p>
                             </div>
                         </div>
                         <ul class="price-description-list">
@@ -311,7 +327,7 @@
                 </ul>
             </div>
         </section>
-        <section class="review hidden">
+        <section class="review">
             <div class="container review-container">
                 <h2 class="review-title">What Clients Say</h2>
                 <p class="review-text">Problems trying to resolve the conflict between
@@ -403,7 +419,7 @@
                 </ul>
             </div>
         </section>
-        <section class="promo hidden">
+        <section class="promo">
             <div class="container promo-container">
                 <div class="promo-left">
                     <p class="promo-text">
@@ -413,12 +429,12 @@
                         Get This
                     </button>
                 </div>
-                <div class="promo-right"><img src="./image/promo-img.svg" alt="" ></div>
+                <div class="promo-right"><img class="promo-img" src="./image/promo-img.png" alt="" ></div>
             </div>
         </section>
     </main>
     <footer>
-        <section class="footer hidden">
+        <section class="footer">
             <div class="container footer-container">
                 <div class="footer-logo-container">
                     <a class="footer-logo" href="./index.html">
@@ -494,5 +510,6 @@
             </div>
         </section>
     </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

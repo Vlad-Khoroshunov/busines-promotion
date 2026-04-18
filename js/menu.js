@@ -1,18 +1,30 @@
-(() => {
-  const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
-    openModalBtn: document.querySelector("[data-menu-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
-    closeModalBtn: document.querySelector("[data-menu-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
-    modal: document.querySelector("[data-menu]"),
-  };
+// 1. Находим кнопку-бургер в документе
+const burgerBtn = document.querySelector('.burger-btn');
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+// 2. Находим кнопку-крестик внутри мобильного меню
+const closeBtn = document.querySelector('.close-btn');
 
-  function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
-    refs.modal.classList.toggle("is-open");
-  }
-})();
+// 3. Находим само мобильное меню
+const mobileMenu = document.querySelector('.mobile-menu');
+
+
+// 4. Когда пользователь нажимает на бургер
+burgerBtn.addEventListener('click', () => {
+
+  // Добавляем класс .open — меню выезжает справа
+  mobileMenu.classList.add('open');
+
+  // Скрываем кнопку-бургер, чтобы не было двух кнопок одновременно
+  burgerBtn.style.display = 'none';
+});
+
+
+// 5. Когда пользователь нажимает на крестик
+closeBtn.addEventListener('click', () => {
+
+  // Убираем класс .open — меню уезжает обратно вправо
+  mobileMenu.classList.remove('open');
+
+  // Возвращаем кнопку-бургер обратно
+  burgerBtn.style.display = 'block';
+});
