@@ -138,8 +138,28 @@ button {
 }
 
 .burger-btn {
+    position: relative;
+    width: 28px;
+    height: 31px;
     background-color: transparent;
     border: none;
+}
+
+.burger-btn span {
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+    left: 3px;
+
+}
+
+.burger-btn span:nth-child(1){
+    transform: translateY(-10px);
+}
+
+.burger-btn span:nth-child(3) {
+    transform: translateY(10px);
 }
 
 .header-nav,
@@ -174,6 +194,7 @@ button {
     background-color: transparent;
     border: none;
     font-size: 32px;
+    color: #000;
 }
 
 .mobile-menu-list {
