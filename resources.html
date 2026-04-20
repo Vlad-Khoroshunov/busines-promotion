@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo.svg" type="image/svg+xml">
+    <title>Busines promotion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container header-container">
+            <a class="header-logo logo" href="./index.html">
+                <img src="./image/logo.svg" alt="logo" width="40" height="36">
+                Product
+            </a>
+            <nav class="header-nav">
+
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-link" href="./index.html">Product</a></li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./customers.html">Customers</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li class="header-nav-item"><a class="header-nav-link current" href="./resources.html">Resources</a></li>
+                </ul>
+
+            </nav>
+            <ul class="header-btn-list">
+                <li class="header-btn-item"><button class="header-btn" type="button">Sing in</button></li>
+                <li class="header-btn-item"><button class="header-btn" type="button">Sing up</button></li>
+            </ul>
+            <button class="burger-btn button" type="button">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="mobile-menu">
+                <button class="close-btn" type="button">✕</button>
+
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./index.html">Product</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./customers.html">Customers</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link current" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./resources.html">Resources</a></li>
+                </ul>
+
+                <ul class="mobile-btn-list">
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing in</button></li>
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing up</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="industries">
+            <div class="industies-container container">
+                <div class="industries-left">
+                    <h2 class="industries-title">Great Business made with Product.</h2>
+                    <p class="industries-text">
+                        Build better customer relationships easily messaging that provides a more personal experience for you and your
+                        customers.
+                    </p>
+                    <form id="signupForm" class="signup" action="#" method="post" novalidate>
+                        <label for="signupEmail" class="signup-label">Join our newsletter</label>
+                            <input id="signupEmail" name="email" class="signup-input" type="email" placeholder="Enter your email address"
+                                aria-label="Email address" required autocomplete="email" />
+                            <button class="signup-btn" type="submit">Join Now</button>
+                    </form>
+                    <div class="users-cintainer">
+                        <img src="./image/users-img.png" alt="" width="121" height="50">
+                        <p class="signup-note" aria-hidden="true">Join over <span class="user-number">4000</span><span class="user-plus">+</span> others</p>
+                    </div>
+                </div>
+                <picture class="industries-img-wrapper">
+                    <source media="(min-width: 1150px)" srcset="./image/industries-img.png">
+                    <img src="./image/industries-mobile-img.png" alt="">
+                </picture>
+            </div>
+        </section>
+
+        <section class="stories">
+            <div class="stories-container container">
+                <div class="stories-text-container">
+                    <h2 class="stories-title">Latest Stories</h2>
+                    <p class="stories-text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                </div>
+                <ul class="stories-list">
+                    <li class="stories-item">
+                        <img class="stories-item-img"
+                            srcset="
+                                ./image/wc.jpg 1x,
+                                ./image/wc@2x.jpg 2x
+                                "
+                            src="./image/wc.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Increasing Prosperity With Positive Thinking</p>
+                    </li>
+                    <li class="stories-item">
+                        <img class="stories-item-img" 
+                            srcset="
+                                ./image/presentation.jpg 1x,
+                                ./image/presentation@2x.jpg 2x
+                                "
+                            src="./image/presentation.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Motivation Is The First Step To Success</p>
+                    </li>
+                    <li class="stories-item">
+                        <img class="stories-item-img" 
+                            srcset="
+                                ./image/smocking.jpg 1x,
+                                ./image/smocking@2x.jpg 2x
+                                "
+                            src="./image/smocking.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Success Steps For Your Personal Or Business</p>
+                    </li>
+                    <li class="stories-item">
+                        <img class="stories-item-img" 
+                            srcset="
+                                ./image/increasing.jpg 1x,
+                                ./image/increasing@2x.jpg 2x
+                                "
+                            src="./image/increasing.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Increasing Prosperity With Positive Thinking</p>
+                    </li>
+                    <li class="stories-item">
+                        <img class="stories-item-img" 
+                            srcset="
+                                ./image/motivation.jpg 1x,
+                                ./image/motivation@2x.jpg 2x
+                                "
+                            src="./image/motivation.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Motivation Is The First Step To Success</p>
+                    </li>
+                    <li class="stories-item">
+                        <img class="stories-item-img" 
+                            srcset="
+                                ./image/bw.jpg 1x,
+                                ./image/bw@2x.jpg 2x
+                                "
+                            src="./image/bw.jpg" alt="" width="348">
+                        <h4 class="stories-itme-title">
+                            By <span class="strategies-author">Wahid Ari</span> | 03 March 2019
+                        </h4>
+                        <p class="stories-item-text">Success Steps For Your Personal Or Business</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <section class="footer hidden">
+            <div class="container footer-container">
+                <div class="footer-logo-container">
+                    <a class="footer-logo" href="./index.html">
+                        <img src="./image/logo.svg" alt="logo" width="40" height="36" class="footer-logo-link">
+                        <span class="footer-brand-name">Product</span>
+                    </a>
+                    <ul class="socials-footer-list">
+                        <li class="social-footer-item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="instagram-link">
+                                <div class="social-box">
+                                    <svg class="social-icons" width="20" height="20">
+                                        <use href="./image/socials.svg#instagram"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="social-footer-item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="faceboock-link">
+                                <div class="social-box">
+                                    <svg class="social-icons" width="20" height="20">
+                                        <use href="./image/socials.svg#faceboock"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="social-footer-item">
+                            <a href="https://x.com/" target="_blank" aria-label="twitter-link">
+                                <div class="social-box">
+                                    <svg class="social-icons" width="20" height="20">
+                                        <use href="./image/socials.svg#x"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="resource">
+                    <h3 class="footer-heading">Resource</h3>
+                    <ul class="resource-list">
+                        <li class="resource-item"><a class="footer-link" href="#">About Us</a></li>
+                        <li class="resource-item"><a class="footer-link" href="#">Blog</a></li>
+                        <li class="resource-item"><a class="footer-link" href="#">Contact</a></li>
+                        <li class="resource-item"><a class="footer-link" href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav class="stuff footer-nav">
+                    <h3 class="footer-heading">Legal Stuff</h3>
+                    <ul class="stuff-list">
+                        <li class="stuff-item"><a class="footer-link" href="#">Disclaimer</a></li>
+                        <li class="stuff-item"><a class="footer-link" href="#">Financing</a></li>
+                        <li class="stuff-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+                <div class="subscribe">
+                    <h3 class="footer-heading subscribe-heading">knowing you're always on the best energy deal.</h3>
+                    <form class="footer-form" action="#" method="post" aria-label="Sign up form">
+                        <label class="input-with-icon" for="phone">
+                            <input class="input-row-phone" id="phone" name="phone" type="tel" inputmode="tel" required>
+                        </label>
+                        <button type="submit" class="button btn-subscribe">Sign up Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

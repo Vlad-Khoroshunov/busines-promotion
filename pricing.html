@@ -38,11 +38,24 @@
                 <li class="header-btn-item"><button class="header-btn" type="button">Sing in</button></li>
                 <li class="header-btn-item"><button class="header-btn" type="button">Sing up</button></li>
             </ul>
-            <button class="burger-btn button" type="button" data-menu-open>
-                <svg class="burger-icon" width="24" height="24">
-                    <use href="./image/burger-menu.svg"></use>
-                </svg>
+            <button class="burger-btn button" type="button">
+                <span></span><span></span><span></span>
             </button>
+            <nav class="mobile-menu">
+                <button class="close-btn" type="button">✕</button>
+            
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./index.html">Product</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./customers.html">Customers</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link current" href="./pricing.html">Pricing</a></li>
+                    <li class="mobile-menu-item"><a class="menu-item-link" href="./resources.html">Resources</a></li>
+                </ul>
+            
+                <ul class="mobile-btn-list">
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing in</button></li>
+                    <li class="mobile-btn-item"><button class="header-btn" type="button">Sing up</button></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -118,7 +131,10 @@
             <div class="usecases-container container">
                 <h2 class="usecases-title">Product is being used with great effects alongside:</h2>
                 <div class="usecases-filling">
-                    <img src="./image/usecases-img.svg" alt="" class="usecases-img" width="528" height="392">
+                    <picture class="usecases-img-wrapper">
+                        <source media="(max-width: 767px)" srcset="./image/usecase-mobile-img.svg" class="usecases-img" width="352px" height="288px">
+                        <img src="./image/usecases-img.svg" alt="" class="usecases-img" width="528" height="392">
+                    </picture>
                     <ul class="usecases-list">
                         <li class="usecases-item">
                             <div class="usecases-item-upper">
@@ -249,7 +265,7 @@
                     Get This
                 </button>
             </div>
-            <div class="promo-right"><img src="./image/promo-img.svg" alt=""></div>
+            <div class="promo-right"><img src="./image/promo-img.png" alt=""></div>
         </div>
     </section>
     </main>
@@ -320,5 +336,6 @@
             </div>
         </section>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
