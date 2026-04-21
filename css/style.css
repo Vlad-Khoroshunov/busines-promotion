@@ -2557,6 +2557,7 @@ button {
 
 .signup-input {
     flex: 1;
+    min-width: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -2569,7 +2570,7 @@ button {
 
 .signup-btn {
     border-radius: 100px;
-    padding: 24px;
+    padding: 20px;
     width: 122px;
     height: 50px;
     background-color: #02897a;
@@ -2579,6 +2580,7 @@ button {
     line-height: 0%;
     color: #fff;
     white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .users-cintainer {
