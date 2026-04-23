@@ -1,0 +1,94 @@
+
+body.night-theme {
+    background-color: #1f2e35;
+    color: #fff;
+}
+
+body.night-theme .mobile-menu,
+body.night-theme .close-btn {
+    background-color: #1f2e35;
+    color: #fff;
+}
+
+body.night-theme .burger-btn span {
+    background-color: #fff;
+    color: #fff
+}
+
+
+body.night-theme .header-btn,
+body.night-theme .promo-btn {
+    background: #fff;
+    color: #1f2e35;
+}
+
+body.night-theme .video-btn,
+body.night-theme .strategies-article-motivation,
+body.night-theme .review-author-name,
+body.night-theme .money,
+body.night-theme .currency,
+body.night-theme .price-btn-green {
+    color: #02897a;
+}
+
+body.night-theme .period,
+body.night-theme .per-month-right {
+    color: #e0e0e0;
+}
+
+body.night-theme .promo-text,
+body.night-theme .money-green,
+body.night-theme .currency-green,
+body.night-theme .price-description-item-green {
+    color: #fff;
+}
+
+body.night-theme .footer-link,
+body.night-theme .header-nav-link,
+body.night-theme .menu-item-link {
+    color: #fff;
+}
+
+body.night-theme .support-item-text::before,
+body.night-theme .product-item-title::before {
+    filter: none;
+}
+
+body.night-theme .footer-logo,
+body.night-theme .footer-brand-name,
+body.night-theme .header-logo {
+    color: #fff;
+}
+
+.night-btn {
+    margin-top: 4px;
+    border: none;
+    background-color: transparent;
+}
+
+/* REASONS */
+
+body.night-theme .reasons,
+body.night-theme .offer,
+body.night-theme .enterprice {
+    background: #22343d !important;
+}
+
+body.night-theme .question {
+    background-color: #1f2e35;
+}
+
+body.night-theme .question-title,
+body.night-theme .question-text,
+body.night-theme .question-label,
+body.night-theme .answer-text {
+    color: #fff;
+}
+
+body.night-theme .q-toggle:checked+.question-toggle+.question-answer {
+    background-color: #32454f;
+    border-radius: 0 0 12px 12px;
+}
+
+
+
